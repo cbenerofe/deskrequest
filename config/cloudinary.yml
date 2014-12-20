@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hk2hpi7a8
+  api_key: '789975241898236'
+  api_secret: OAj3sXzi8z-cpYTldzl_DdSmHjk
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hk2hpi7a8
+  api_key: '789975241898236'
+  api_secret: OAj3sXzi8z-cpYTldzl_DdSmHjk
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hk2hpi7a8
+  api_key: '789975241898236'
+  api_secret: OAj3sXzi8z-cpYTldzl_DdSmHjk
+  enhance_image_tag: true
+  static_image_support: false

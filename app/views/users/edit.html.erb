@@ -19,6 +19,16 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
 
+    <% if @user.avatar? %>
+      <%= cl_image_tag(@user.avatar.path, { size: '50x50', crop: :fit, gravity: :face }) %>
+    <% end %>
+      <%= f.attachinary_file_field :avatar %>
+
+    <% @user.photos.each do |photo| %>
+      <%= cl_image_tag(photo.path, { size: '125x125', crop: :fit }) %>
+    <% end %>
+      <%= f.attachinary_file_field :photos %>
+
       <%= f.submit "Create my account", class: "btn btn-primary" %>
     <% end %>
   </div>

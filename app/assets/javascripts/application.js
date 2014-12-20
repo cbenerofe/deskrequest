@@ -15,4 +15,20 @@
 //= require turbolinks
 //= require bootstrap
 //= require bootstrap-sprockets
+//= require jquery.ui.widget
+//= require jquery.iframe-transport
+//= require jquery.fileupload
+//= require cloudinary/jquery.cloudinary
+//= require attachinary
 //= require_tree .
+
+var ready;
+ready = function() {
+
+$('.attachinary-input').attachinary()
+
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
+
