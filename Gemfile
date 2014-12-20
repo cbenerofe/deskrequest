@@ -31,6 +31,6 @@ group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
   gem 'responders', 	'~> 2.0'
-#  gem 'unicorn',       '4.8.3'
+  gem 'unicorn',       '4.8.3'
 end
 
